@@ -6,10 +6,11 @@ This Challenge involved using Typescript to creat a Vechile Builder. This builde
 
 ## Links
 
-Walkthrough Video - 
+Video - https://drive.google.com/file/d/1ebX730JRqX3sX9EABKam2BuqacsPpeFJ/view?usp=sharing
 
-Github Repository - 
+My Github - https://github.com/melonmiiya/VEHICLEBUILD_M08
 
 ## Credits
 
-Help from my tutor Riley Kollman as well as the links provided within the Module page on Canvas.
+Help from my private tutor Riley Kollman 
+Went on to https://www.geeksforgeeks.org/typescript/?ref=shm for help
