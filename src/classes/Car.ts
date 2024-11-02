@@ -25,10 +25,8 @@ class Car extends Vehicle {
     topSpeed: number,
     wheels: Wheel[]
   ) {
-    // Call the constructor of the parent class, Vehicle
+   
     super();
-
-    // Initialize properties of the Car class
     this.vin = vin;
     this.color = color;
     this.make = make;
@@ -48,7 +46,7 @@ class Car extends Vehicle {
 
   // Override the printDetails method from the Vehicle class
   override printDetails(): void {
-    // Call the printDetails method of the parent class, Vehicle
+   
     super.printDetails();
 
     // Print details of the Car class
