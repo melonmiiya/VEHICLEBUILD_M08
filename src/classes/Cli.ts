@@ -8,14 +8,10 @@ import Vehicle from "./Vehicle.js";
 
 // define the Cli class
 class Cli {
-  // TODO: update the vehicles property to accept Truck and Motorbike objects as well
-  // TODO: You will need to use the Union operator to define additional types for the array
-  // TODO: See the AbleToTow interface for an example of how to use the Union operator
   vehicles: (Car | Truck | Motorbike)[];
   selectedVehicleVin: string | undefined;
   exit: boolean = false;
 
-  // TODO: Update the constructor to accept Truck and Motorbike objects as well
   constructor(vehicles: (Car | Truck | Motorbike)[]) {
     this.vehicles = vehicles;
   }
@@ -70,7 +66,7 @@ class Cli {
           // create a car
           this.createCar();
         }
-        // TODO: add statements to create a truck or motorbike if the user selects the respective vehicle type
+       
         if (answers.vehicleType === 'Truck') {
           // create a car
           this.createTruck();
@@ -119,7 +115,7 @@ class Cli {
       ])
       .then((answers) => {
         const car = new Car(
-          // TODO: The generateVin method is static and should be called using the class name Cli, make sure to use Cli.generateVin() for creating a truck and motorbike as well!
+         
           Cli.generateVin(),
           answers.color,
           answers.make,
@@ -180,8 +176,7 @@ class Cli {
       ])
       .then((answers) => {
         const truck = new Truck(
-          // TODO: Use the answers object to pass the required properties to the Truck constructor
-          // TODO: The generateVin method is static and should be called using the class name Cli, make sure to use Cli.generateVin() for creating a truck and motorbike as well!
+          
           Cli.generateVin(),
           answers.color,
           answers.make,
@@ -469,7 +464,7 @@ class Cli {
           type: 'list',
           name: 'CreateOrSelect',
           message:
-            'Would you like to create a new vehicle or perform an action on an existing vehicle?',
+            'Would you like to create a new vehicle or choose an action on an existing vehicle?',
           choices: ['Create a new vehicle', 'Select an existing vehicle'],
         },
       ])
