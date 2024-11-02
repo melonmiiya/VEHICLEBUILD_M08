@@ -56,7 +56,7 @@ if (wheels.length !== 2) {
     }
     console.log(`Motorbike ${bikey.make} ${bikey.model} is doing a wheelie!`);
   }
-  // TODO: Override the printDetails method from the Vehicle class
+ 
     override printDetails(): void {
       // Call the printDetails method of the parent class, Vehicle
       super.printDetails();
@@ -78,9 +78,6 @@ if (wheels.length !== 2) {
         `Wheel 2: ${this.wheels[1].getDiameter} inch with a ${this.wheels[1].getTireBrand} tire`
       );
 
-    // TODO: The method should call the printDetails method of the parent class
-    // TODO: The method should log the details of the Motorbike
-    // TODO: The details should include the VIN, make, model, year, weight, top speed, color, and wheels
   }
 }
 
